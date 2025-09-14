@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suddat Shakya - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-papqw+0v5Qpo+1GkS6uLz8RkF1IjcV6W0q5cX3WvY0Z1lRMLZMTL2y8Ovm3s0Zw1pM0mG0IChPZT4+L2Gp5e1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="font-[Inter] bg-white text-gray-900">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <nav class="flex items-center justify-between px-[120px] py-[28px]">
+
+            <!-- Logo -->
+            <div class="text-[28px] font-extrabold text-[#2563EB] tracking-wide">
+                Suddat Shakya
+            </div>
+
+            <!-- Nav Links -->
+            <ul class="hidden md:flex gap-[48px] text-[18px] font-medium text-gray-700">
+                <li>
+                    <a href="#home" class="hover:text-[#2563EB] transition-colors">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="hover:text-[#2563EB] transition-colors">About Me</a>
+                </li>
+                <li>
+                    <a href="#skills" class="hover:text-[#2563EB] transition-colors">Skills</a>
+                </li>
+                <li>
+                    <a href="#work" class="hover:text-[#2563EB] transition-colors">Works</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="hover:text-[#2563EB] transition-colors">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-[28px] text-gray-700">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-[120px] pt-[180px] pb-[80px] bg-[#F9FAFB]">
+
+        <!-- Left: Text Content -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left">
+            <h2 class="text-[64px] leading-[72px] font-semibold mb-[12px]">Hi,</h2>
+            <h2 class="text-[64px] leading-[72px] font-semibold mb-[12px]">
+                I'm <span class="text-[#2563EB] font-extrabold">Suddat</span>
+            </h2>
+            <h3 class="text-[50px] leading-[36px] font-bold text-gray-500 mb-[32px]">UI/UX Designer</h3>
+
+            <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+                class="px-[140px] py-[14px] text-[18px] bg-[#2563EB] text-white rounded-[8px] shadow hover:bg-[#1E4FCB] transition-all mb-[40px]">
+                Contact Me
+            </button>
+
+            <!-- Social Icons -->
+            <div class="flex gap-[28px] text-[28px] text-gray-600">
+                <a href="#"><i class="fab fa-linkedin hover:text-[#2563EB]"></i></a>
+                <a href="#"><i class="fab fa-behance hover:text-[#2563EB]"></i></a>
+                <a href="#"><i class="fab fa-github hover:text-[#2563EB]"></i></a>
+            </div>
+        </div>
+
+<!-- Right: Image with Glow -->
+<div class="relative mb-[40px] md:mb-0 md:ml-[100px] flex justify-center">
+    <!-- Glow -->
+    <div class="absolute -inset-2 rounded-full bg-gradient-to-tr from-[#2563EB]/40 to-[#3B82F6]/40 blur-3xl opacity-100"></div>
+
+    <div class="relative bg-gradient-to-tr from-[#2563EB] to-[#3B82F6] p-[8px] rounded-full shadow-2xl">
+        <img src="suddat.jpg" alt="Suddat Shakya"
+            class="w-[320px] h-[320px] md:w-[400px] md:h-[400px] object-cover rounded-full border-[6px] border-white shadow-xl">
+    </div>
+</div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="min-h-screen flex justify-center items-center px-6 md:px-10 bg-white relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 flex justify-center items-center">
+            <img src="footer.jpg" alt="Background" class="object-cover w-full h-full opacity-100" />
+        </div>
+
+        <div class="relative w-full max-w-[1000px] h-[400px]">
+            <!-- Subtle Glow -->
+            <div
+                class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#2563EB]/40 to-[#3B82F6]/40 blur-xl opacity-60">
+            </div>
+
+
+            <!-- Card with Blur Background -->
+            <div
+                class="relative bg-grey/20 backdrop-blur-md rounded-2xl shadow-xl p-10 md:p-14 text-center flex flex-col justify-center h-full space-y-6 border border-white/20">
+                <h2 class="text-[36px] font-bold text-[#25c7eb]">About Me</h2>
+                <p class="text-lg md:text-xl text-white leading-relaxed">
+                    Recent graduate from The British College with strong collaborative skills and the ability to work
+                    effectively in team environments. Experienced in identifying issues, analyzing problems, and
+                    providing practical solutions. Completed an internship at Pacecode Pvt. Ltd. focused on Next.js and
+                    React
+                    development, and enhanced design expertise through a UI/UX certification from Mindrisers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills -->
+    <section id="skills" class="min-h-screen flex flex-col justify-center items-center px-10 bg-white fade-in">
+        <div class="text-center w-full max-w-[1200px]">
+            <h2 class="text-[36px] font-bold text-[#2563EB] mb-10">Skills</h2>
+
+            <!-- Grid: 3 + 2 layout -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+
+                <!-- Card 1 -->
+                <div class="relative w-[350px] h-[220px] group">
+                    <!-- Glow -->
+                    <div
+                        class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#2563EB]/20 to-[#3B82F6]/20 blur-xl opacity-0 group-hover:opacity-30 transition duration-300">
+                    </div>
+                    <!-- Card -->
+                    <div
+                        class="relative bg-white rounded-2xl border border-gray-200 p-6 flex flex-col items-center justify-center h-full transition-all duration-300 group-hover:shadow-xl">
+                        <h4 class="text-[22px] font-bold mb-2 text-[#2563EB]">Programming Languages</h4>
+                        <p class="text-gray-700 text-center">Python, Java, C++, C</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="relative w-[350px] h-[220px] group">
+                    <div
+                        class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#2563EB]/20 to-[#3B82F6]/20 blur-xl opacity-0 group-hover:opacity-30 transition duration-300">
+                    </div>
+                    <div
+                        class="relative bg-white rounded-2xl border border-gray-200 p-6 flex flex-col items-center justify-center h-full transition-all duration-300 group-hover:shadow-xl">
+                        <h4 class="text-[22px] font-bold mb-2 text-[#2563EB]">Web Development</h4>
+                        <p class="text-gray-700 text-center">React.js, Next.js, HTML, CSS, JavaScript, PHP</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="relative w-[350px] h-[220px] group">
+                    <div
+                        class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#2563EB]/20 to-[#3B82F6]/20 blur-xl opacity-0 group-hover:opacity-30 transition duration-300">
+                    </div>
+                    <div
+                        class="relative bg-white rounded-2xl border border-gray-200 p-6 flex flex-col items-center justify-center h-full transition-all duration-300 group-hover:shadow-xl">
+                        <h4 class="text-[22px] font-bold mb-2 text-[#2563EB]">Design Tools</h4>
+                        <p class="text-gray-700 text-center">Figma, Photoshop, Illustrator, AutoCAD, SketchUp, Blender
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 (centered) -->
+                <div class="relative w-[350px] h-[220px] group justify-self-center">
+                    <div
+                        class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#2563EB]/20 to-[#3B82F6]/20 blur-xl opacity-0 group-hover:opacity-30 transition duration-300">
+                    </div>
+                    <div
+                        class="relative bg-white rounded-2xl border border-gray-200 p-6 flex flex-col items-center justify-center h-full transition-all duration-300 group-hover:shadow-xl">
+                        <h4 class="text-[22px] font-bold mb-2 text-[#2563EB]">Version Control</h4>
+                        <p class="text-gray-700 text-center">Git</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 (centered) -->
+                <div class="relative w-[350px] h-[220px] group justify-self-center">
+                    <div
+                        class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#2563EB]/20 to-[#3B82F6]/20 blur-xl opacity-0 group-hover:opacity-30 transition duration-300">
+                    </div>
+                    <div
+                        class="relative bg-white rounded-2xl border border-gray-200 p-6 flex flex-col items-center justify-center h-full transition-all duration-300 group-hover:shadow-xl">
+                        <h4 class="text-[22px] font-bold mb-2 text-[#2563EB]">Video Editing</h4>
+                        <p class="text-gray-700 text-center">Premiere Pro</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Work -->
+<section id="work" class="min-h-screen flex flex-col justify-center px-10 bg-white fade-in mb-[100px] scroll-mt-[120px]">
+
+
+        <h2 class="section-title text-center text-[36px] font-bold text-[#2563EB]">Work</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <!-- Interior Design Website Card -->
+            <div
+                class="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
+                <img src="Interior.png" class="w-full h-48 object-cover rounded-t-2xl" />
+                <div class="p-6 flex flex-col items-center text-center">
+                    <h3 class="text-lg md:text-xl font-bold text-[#2563EB] mb-1">Interior Design Website — UI/UX</h3>
+                    <span class="text-sm text-gray-500 mb-2">Aug 2025 – Sep 2025</span>
+                    <ul class="text-gray-700 text-sm md:text-base list-inside space-y-1">
+                        <li>Modern, clean layout with high-quality visuals, smooth animations, and responsive design for
+                            both mobile and desktop.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bus Transportation Card -->
+            <div
+                class="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
+                <img src="PSD_6.png" class="w-full h-48 object-cover rounded-t-2xl" />
+                <div class="p-6 flex flex-col items-center text-center">
+                    <h3 class="text-lg md:text-xl font-bold text-[#2563EB] mb-1">Bus Transportation App — UI/UX</h3>
+                    <span class="text-sm text-gray-500 mb-2">Aug 2025 – Sep 2025</span>
+                    <ul class="text-gray-700 text-sm md:text-base list-inside space-y-1">
+                        <li>Simple, intuitive interface with easy booking, clear schedules, and responsive design for
+                            mobile.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Final Year Project Card -->
+            <div
+                class="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
+                <img src="mathvision.png" class="w-full h-48 object-cover rounded-t-2xl" />
+                <div class="p-6 flex flex-col items-center text-center">
+                    <h3 class="text-lg md:text-xl font-bold text-[#2563EB] mb-1">Final Year Project — British College
+                    </h3>
+                    <span class="text-sm text-gray-500 mb-2">Jan 2025 – May 2025</span>
+                    <p class="text-gray-700 text-sm md:text-base">Developed MathVision: a Python-based tool using deep
+                        learning to detect and solve mathematical equations from images.</p>
+                </div>
+            </div>
+
+            <!-- Team Project Card -->
+            <div
+                class="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
+                <img src="TBC.png" class="w-full h-48 object-cover rounded-t-2xl" />
+                <div class="p-6 flex flex-col items-center text-center">
+                    <h3 class="text-lg md:text-xl font-bold text-[#2563EB] mb-1">Team Project — British College</h3>
+                    <span class="text-sm text-gray-500 mb-2">Jun 2024 – Jul 2024</span>
+                    <p class="text-gray-700 text-sm md:text-base">Created an e-commerce website using HTML, CSS, PHP
+                        with PayPal integration and admin dashboard.</p>
+                </div>
+            </div>
+
+            <!-- Internship Card -->
+            <div
+                class="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
+                <img src="nimtoe.png" class="w-full h-48 object-cover rounded-t-2xl" />
+                <div class="p-6 flex flex-col items-center text-center">
+                    <h3 class="text-lg md:text-xl font-bold text-[#2563EB] mb-1">Intern — PaceCode</h3>
+                    <span class="text-sm text-gray-500 mb-2">Jun 2024 – Nov 2024</span>
+                    <ul class="text-gray-700 text-sm md:text-base list-inside space-y-1">
+                        <li>Worked as an Intern on the live project “Nimto,” gaining hands-on experience in building and
+                            deploying React/Next.js web applications.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+     <section id="contact">
+    <footer class="relative h-[400px] w-full text-black overflow-hidden flex items-center">
+        <!-- Background with fade effect -->
+        <div class="absolute inset-0">
+            <img src="footer.jpg" alt="Footer Background" />
+            <!-- class="w-full h-full object-cover opacity-100 mask-fade-top" /> -->
+            <!-- Dark overlay -->
+            <!-- <div class="absolute inset-0 bg-black opacity-0 mask-fade-top"></div> -->
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 w-full grid grid-cols-1 md:grid-cols-2 items-start px-[100px] py-[50px]">
+
+            <!-- Left Column -->
+            <div class="flex flex-col">
+                <h2 class="text-[32px] font-bold mb-3 text-[#25c7eb]">Interested in working together?</h2>
+                <p class="text-[22px] text-white mb-10">Let’s connect and create something impactful.</p>
+
+                <h3 class="text-[28px] font-bold mb-3 text-[#25c7eb]">Connect</h3>
+                <div class="flex space-x-8 text-[22px] text-gray-400">
+                    <a href="https://github.com/SuddatShakya847" target="_blank" class="hover:text-[#2563EB]">GitHub</a>
+                    <a href="https://www.linkedin.com/in/suddat-shakya-4832441b7/" target="_blank"
+                        class="hover:text-[#2563EB]">LinkedIn</a>
+                    <a href="https://www.instagram.com/_suddat_/" target="_blank"
+                        class="hover:text-[#2563EB]">Instagram</a>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <!-- Right Column with 3D Glass Box -->
+            <div class="flex flex-col items-end text-right relative">
+                <!-- Glass Box -->
+                <div class="bg-white/20 backdrop-blur-md border border-white/30 rounded-xl p-8 w-[350px]">
+                    <h3 class="text-[32px] font-bold mb-3 text-[#25c7eb]">Contact</h3>
+
+                    <ul class="space-y-5 text-[22px] text-white">
+                        <li class="flex items-center justify-end space-x-2">
+                            <span>📍</span><span>Lalitpur, Nepal</span>
+                        </li>
+                        <li class="flex items-center justify-end space-x-2">
+                            <span>📞</span><span>9840265358</span>
+                        </li>
+                        <li class="flex items-center justify-end space-x-2">
+                            <span>📥</span><span>suddat1300@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Fade Mask -->
+    <style>
+        .mask-fade-top {
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+            mask-repeat: no-repeat;
+            mask-size: cover;
+        }
+    </style>
+
+</section>
+    <!-- Font Awesome (for social icons) -->
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+
+
+    <!-- <style>
+/* Fade effect at the top of the image */
+.mask-fade-top {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+    mask-repeat: no-repeat;
+    mask-size: cover;
+}
+</style> -->
+
+
+    <style>
+        /* Fade effect at the top of the image */
+        .mask-fade-top {
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: cover;
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+            mask-repeat: no-repeat;
+            mask-size: cover;
+        }
+    </style>
+
+
+    <style>
+        /* Fade effect at the top of the image */
+        .mask-fade-top {
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: cover;
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+            mask-repeat: no-repeat;
+            mask-size: cover;
+        }
+    </style>
+
+
+    <!-- Scroll Animation -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('appear');
+                    }, i * 150); // stagger effect
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.fade-in').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
