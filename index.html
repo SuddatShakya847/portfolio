@@ -476,25 +476,29 @@
 
     <!-- Footer -->
     <section id="contact">
-        <footer class="relative h-[400px] w-full text-black overflow-hidden flex items-center">
-            <!-- Background with fade effect -->
-            <div class="absolute inset-0">
-                <img src="footer.jpg" alt="Footer Background" />
-                <!-- class="w-full h-full object-cover opacity-100 mask-fade-top" /> -->
-                <!-- Dark overlay -->
-                <!-- <div class="absolute inset-0 bg-black opacity-0 mask-fade-top"></div> -->
-            </div>
+        <footer class="relative w-full text-black overflow-hidden bg-gray-900">
+
+            <!-- Background -->
+<div class="absolute inset-0 h-[400px]">
+  <img src="footer.jpg" alt="Footer Background" class="w-full h-full object-cover object-top" />
+</div>
+
 
             <!-- Content -->
-            <div class="relative z-10 w-full grid grid-cols-1 md:grid-cols-2 items-start px-[100px] py-[50px]">
+            <div
+                class="relative z-10 w-full grid grid-cols-1 md:grid-cols-2 gap-10 px-6 md:px-[100px] py-[50px] text-white">
 
                 <!-- Left Column -->
                 <div class="flex flex-col">
-                    <h2 class="text-[32px] font-bold mb-3 text-[#25c7eb]">Interested in working together?</h2>
-                    <p class="text-[22px] text-white mb-10">Let’s connect and create something impactful.</p>
-                    <h3 class="text-[28px] font-bold mb-3 text-[#25c7eb]">Connect</h3>
-                    <div class="flex space-x-8 text-[22px] text-gray-400">
+                    <h2 class="text-[26px] md:text-[32px] font-bold mb-3 text-[#25c7eb]">
+                        Interested in working together?
+                    </h2>
+                    <p class="text-[18px] md:text-[22px] mb-10 text-white">
+                        Let’s connect and create something impactful.
+                    </p>
 
+                    <h3 class="text-[24px] md:text-[28px] font-bold mb-3 text-[#25c7eb]">Connect</h3>
+                    <div class="flex flex-wrap gap-6 text-white">
                         <!-- GitHub -->
                         <a href="https://github.com/SuddatShakya847" target="_blank"
                             class="flex items-center space-x-2 hover:text-[#2563EB]">
@@ -521,7 +525,7 @@
                         </a>
 
                         <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/suddatshakya/" target="_blank"
+                        <a href="https://www.linkedin.com/in/suddat-shakya/" target="_blank"
                             class="flex items-center space-x-2 hover:text-[#2563EB]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                 class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -602,25 +606,18 @@
                             <span>Instagram</span>
                         </a>
                     </div>
-
                 </div>
 
-                <!-- Right Column -->
-                <!-- Right Column with 3D Glass Box -->
-                <div class="flex flex-col items-end text-right relative">
-                    <!-- Glass Box -->
-                    <div class="bg-white/20 backdrop-blur-md border border-white/30 rounded-xl p-8 w-[350px]">
-                        <h3 class="text-[32px] font-bold mb-3 text-[#25c7eb]">Contact</h3>
 
-                        <ul class="space-y-5 text-[22px] text-white">
-                            <li class="flex items-center justify-end space-x-2">
-                                <span>📍</span><span>Lalitpur, Nepal</span>
-                            </li>
-                            <li class="flex items-center justify-end space-x-2">
-                                <span>📞</span><span>+977 9840265358</span>
-                            </li>
-                            <li class="flex items-center justify-end space-x-2">
-                                <span>📥</span><span>suddat1300@gmail.com</span>
+                <!-- Right Column -->
+                <div class="flex justify-start md:justify-end">
+                    <div
+                        class="bg-white/20 backdrop-blur-md border border-white/30 rounded-xl p-6 md:p-8 w-full max-w-[350px]">
+                        <h3 class="text-[24px] md:text-[32px] font-bold mb-3 text-[#25c7eb]">Contact</h3>
+                        <ul class="space-y-4 text-[18px] md:text-[22px]">
+                            <li class="flex items-center space-x-2"><span>📍</span><span>Lalitpur, Nepal</span></li>
+                            <li class="flex items-center space-x-2"><span>📞</span><span>9840265358</span></li>
+                            <li class="flex items-center space-x-2"><span>📥</span><span>suddat1300@gmail.com</span>
                             </li>
                         </ul>
                     </div>
