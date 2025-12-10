@@ -218,7 +218,7 @@
 
     <!-- Work -->
     <section id="work"
-        class="min-h-screen flex flex-col justify-center px-6 sm:px-8 md:px-10 bg-white fade-in mb-[100px] scroll-mt-[120px]">
+        class="min-h-screen flex flex-col justify-center px-6 sm:px-8 md:px-10 bg-white  mb-[100px] scroll-mt-[120px]">
 
         <h2 class="section-title text-center text-[30px] sm:text-[34px] md:text-[36px] font-bold text-[#2563EB]">Work
         </h2>
@@ -566,7 +566,7 @@
                     }, i * 150); // stagger effect
                 }
             });
-        }, { threshold: 0.15 });
+        }, { threshold: 0.1 });
 
         document.querySelectorAll('.fade-in').forEach((el) => {
             observer.observe(el);
